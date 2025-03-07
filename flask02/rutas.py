@@ -1,15 +1,13 @@
-from flask import flask from Flask, render_template
+from flask import Flask, render_template
 from modelos import Producto
-#crear instancia
+
 app = Flask(__name__)
 
+@app.route('/')
 
-#definir una función
 def inicio():
-    #crear productos
-    productos = [Producto("Manzanas", 12), Producto("Peras", 13)]
-    return ''
-
+    productos = [Producto("Coca", 25), Producto("Pepsi", 20), Producto("Fanta", 15)]
+    return render_template('index.html', productos=productos)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', debug=True)
