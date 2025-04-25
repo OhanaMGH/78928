@@ -10,6 +10,6 @@
 [submodule "Angular"]
 	path = Angular
 	url = https://github.com/OhanaMGH/Angular.git
-[submodule "Express"]
-	path = Express
-	url = https://github.com/OhanaMGH/Express.git
+[submodule "SpringBoot"]
+	path = SpringBoot
+	url = https://github.com/OhanaMGH/SpringBoot.git
